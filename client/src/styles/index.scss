@@ -3,10 +3,13 @@
 :root {
   --primary-color: rgb(237, 146, 231);
   --secondary-color: rgb(244, 240, 244);
-  --dark-color: #0c1123;
-  --light-color: rgb(243, 231, 242);
+  --sent-color: #545456;
+  --received-color: rgb(237, 237, 237);
+  --light-color: rgb(255, 255, 255);
   --success-color: #4864d4;
   --error-color: rgb(84, 26, 80);
+  --dark-text-color: #333;
+  --light-text-color: #FFFFF;
 }
 
 *,

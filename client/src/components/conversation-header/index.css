@@ -1,0 +1,22 @@
+.conv-header {
+  display: flex;
+
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+
+  border-bottom: 0.1rem solid var(--primary-color);
+}
+
+.conv-header-img {
+  width: 6rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.conv-header-name {
+  font-weight: 500;
+}
