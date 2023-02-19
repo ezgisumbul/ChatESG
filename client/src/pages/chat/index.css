@@ -1,5 +1,5 @@
 .chat {
-  height: calc(100vh-5rem);
+  height: calc(100vh - 5rem);
   display: flex;
 
   font-size: 1.6rem;
@@ -12,7 +12,7 @@
 }
 
 .chat-menu-container {
-  flex: 3.5;
+  flex: 3;
 }
 
 .chat-menu-input {
@@ -24,15 +24,69 @@
 }
 
 .chat-box-container {
-  flex: 5.5;
-}
-
-.chat-online-container {
-  flex: 3;
+  flex: 7;
 }
 
 .chat-menu,
-.chat-box,
-.chat-online {
+.chat-box {
   padding: 1rem;
+}
+
+.chat-box {
+  /* position: relative; */
+  display: flex;
+
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.chat-box-middle {
+  display: flex;
+
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 0.8rem;
+  overflow-y: scroll;
+}
+
+.chat-box-bottom {
+  /* position: absolute;
+  bottom: 3rem; */
+
+  display: flex;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  height: 10%;
+
+  /* background-color: aqua; */
+}
+
+.chat-msg-input {
+  flex: 9;
+  height: 6rem;
+  max-height: 100%;
+  padding: 1rem;
+
+  resize: none;
+  border-radius: 1rem;
+  color: var(--dark-text-color);
+
+  font-size: 1.3rem;
+}
+
+.chat-msg-submit-btn {
+  flex: 1;
+  height: 6rem;
+
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--dark-text-color);
+
+  cursor: pointer;
 }

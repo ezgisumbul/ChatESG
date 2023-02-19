@@ -2,14 +2,14 @@
 
 :root {
   --primary-color: rgb(237, 146, 231);
-  --secondary-color: rgb(244, 240, 244);
+  --secondary-color: rgb(246, 217, 246);
   --sent-color: #545456;
   --received-color: rgb(237, 237, 237);
   --light-color: rgb(255, 255, 255);
   --success-color: #4864d4;
   --error-color: rgb(84, 26, 80);
   --dark-text-color: #333;
-  --light-text-color: #FFFFF;
+  --light-text-color: rgb(237, 237, 237);
 }
 
 *,
@@ -62,4 +62,9 @@ p {
 
 img {
   width: 100%;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
 }

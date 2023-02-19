@@ -9,9 +9,9 @@ export const Chat = () => {
       <div className="chat-menu-container">
         <div className="chat-menu">
           <input
+            className="chat-menu-input"
             type="text"
             placeholder="Search or start new chat"
-            className="chat-menu-input"
           />
           <Conversation />
           <Conversation />
@@ -26,13 +26,33 @@ export const Chat = () => {
             <ConversationHeader />
           </div>
 
-          <div className="chat-box-bottom">
+          <div className="chat-box-middle">
+            <Message />
+            <Message own={true} />
+            <Message />
+            <Message />
+            <Message />
+            <Message />
+            <Message own={true} />
+            <Message />
+            <Message />
+            <Message own={true} />
+            <Message />
+            <Message />
+            <Message own={true} />
             <Message />
           </div>
+          <div className="chat-box-bottom">
+            <textarea
+              className="chat-msg-input"
+              placeholder="Write a message"
+              minLength={1}
+              maxLength={500}
+              spellCheck={true}
+            />
+            <button className="chat-msg-submit-btn">Send</button>
+          </div>
         </div>
-      </div>
-      <div className="chat-online-container">
-        <div className="chat-online">online</div>
       </div>
     </div>
   );
